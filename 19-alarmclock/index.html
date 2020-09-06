@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Set The Alarm : </h1>
+    <audio src="Alarm-Fast-A1-www.fesliyanstudios.com (1).mp3" id="audio"></audio>
+    <form>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <input type="button" value="Set" onclick="getminute()">
+
+       
+
+        <input type="button" value="Compare" onclick="compare()">
+        <input type="button" value="Stop" onclick="stop()">
+    </form>
+    <div id="alarm"> </div>
+    <div id="alarm1"> </div>
+    <p id="alarm2"> </p>
+    <script>
+        setInterval(function getminute() {
+            var currentdate = new Date();
+            var ctime = currentdate.toString();
+            var ctimestr = ctime.slice(16, 21)
+
+
+            var time = document.getElementById("time");
+            var timec = time.value
+            document.getElementById("alarm").innerText = timec
+            if (ctimestr === timec) {
+                document.getElementById("audio").play()
+
+            } else {}
+            clearInterval(getminute())
+
+        }, 1000)
+
+        function stop() {
+            document.getElementById("audio").suspend()
+            document.getElementById("audio").currentime = 0
+        }
+
+        function getdate() {
+            var date = document.getElementById("date");
+            var datec = date.value
+            document.getElementById("alarm").innerText = datec
+        }
+
+
+
+
+
+
+
+        // document.getElementById("alarm").innerText = time.value;
+
+        // var formdate = form.getElementById("date")
+        // var a = formdate.value
+        // var now = new Date();
+        // var date = now.getDate();
+        // var hour = now.getHours();
+        // var minutes = now.getMinutes();
+        // document.write(date + ":" + hour + ':' + minutes + '<br>');
+        // document.getElementById('yes').innerText
+
+        // function setalarm() {
+        //     var alarm = new Date();
+
+        //     var cdate = alarm.getDate();
+        //     var chour = alarm.getHours();
+        //     var cminutes = alarm.getMinutes();
+
+        //     var show = cdate + ":" + chour + ":" + cminutes;
+        //     document.write(show)
+        // }
+        // setalarm()
+        // Document.write(a)
+    </script>
+</body>
+
+</html>

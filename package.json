@@ -1,0 +1,37 @@
+{
+  "name": "challenge23",
+  "version": "1.0.0",
+  "description": "A collection of very unique problems and their solutions, code written is very simple and easy to understand",
+  "main": "index.js",
+  "scripts": {
+    "challenge1": "node solution 1 primeandnarc.js",
+    "challenge2": "cd gaolden ration; python3 -m http.server 8000",
+    "challenge3": "node solution 3 multipleof11.js",
+    "challenge4": "cd 4-stopwatch; python3 -m http.server 8000",
+    "challenge5": "node solutin 5 xorcipher.js",
+    "challenge6": "node solution 6 primeno&multiplicationtable.js",
+    "challenge7": "node solution 7 inputstring.js",
+    "challenge8": "cd 8-htmlvideotag; python3 -m http.server 8000",
+    "challenge9": "cd 9-ascii finder; python3 -m http.server 8000",
+    "challenge10": "node solution 10 bubblesort.js",
+    "challenge11": "cd 11-decimaltobinarycalculator; python3 -m http.server 8000",
+    "challenge12": "node solution 12 magicsquare.js",
+    "challenge13": "node solution 13 4powerseries.js",
+    "challenge14": "node solution 14 identity matrix.js",
+    "challenge15": "node solution 15 countofoddeven.js",
+    "challenge16": "node solution 16 printpattern.js",
+    "challenge17": "node solution 17 series2.js",
+    "challenge18": "node solution 18 series3.js",
+    "challenge19": "cd 19-alarmclock; python3 -m http.server 8000",
+    "challenge20": "node solution 20 multipleof10.js",
+    "challenge21": "node solution 21 x3.5.js",
+    "challenge22": "node solution 22 bitrotation.js.js",
+    "challenge23": "node solution 23 unique.js.js"
+    
+  },
+  "author": "Sonu Pahal",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

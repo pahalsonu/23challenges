@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="golden ratio.css">
+</head>
+
+<body>
+    <div id="hello"></div>
+    <script>
+        function myFunction() {
+            document.write('hello ji')
+            const hello = document.getElementById("hello")
+            for (i = 1; i < 5; i = i * 1.62) {
+                const button = document.createElement("div");
+                button.className = "sec";
+                h = 555
+                b = 555
+                h = h / i
+                b = b / i
+                button.style.width = `${h}px`;
+                button.style.height = `${b}px`;
+                // document.getElementById("sec").style.backgroundColor = "red"
+                const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+                button.style.backgroundColor = "#" + randomColor;
+                hello.appendChild(button);
+            }
+        }
+        myFunction()
+    </script>
+    <script src="golden ratio.js"></script>
+</body>
+
+</html>
